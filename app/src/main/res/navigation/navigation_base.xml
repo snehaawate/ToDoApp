@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_base"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.dewan.todoapp.view.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_homeFragment_to_taskFragment"
+            app:destination="@id/navigation_add_task" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/navigation_profile" />
+        <action
+            android:id="@+id/action_navigation_home_to_taskDetailFragment"
+            app:destination="@id/taskDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_add_task"
+        android:name="com.dewan.todoapp.view.ui.task.TaskFragment"
+        android:label="Add Task"
+        tools:layout="@layout/task_fragment" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.dewan.todoapp.view.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/profile_fragment" >
+        <action
+            android:id="@+id/action_navigation_profile_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskDetailFragment"
+        android:name="com.dewan.todoapp.view.ui.task.detail.TaskDetailFragment"
+        android:label="Task Detail"
+        tools:layout="@layout/task_detail_fragment" >
+        <argument
+            android:name="dat_time"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="body"
+            app:argType="string" />
+        <argument
+            android:name="status"
+            app:argType="string" />
+        <argument
+            android:name="user_id"
+            app:argType="string" />
+        <argument
+            android:name="status_color"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_taskDetailFragment_to_editTaskFragment"
+            app:destination="@id/editTaskFragment" />
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="taskId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_taskDetailFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <argument
+            android:name="note"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/editTaskFragment"
+        android:name="com.dewan.todoapp.view.ui.task.edit.EditTaskFragment"
+        android:label="Edit Task"
+        tools:layout="@layout/edit_task_fragment" >
+        <argument
+            android:name="task_id"
+            app:argType="string" />
+        <argument
+            android:name="task_title"
+            app:argType="string" />
+        <argument
+            android:name="task_body"
+            app:argType="string" />
+        <argument
+            android:name="task_status"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_editTaskFragment_to_taskDetailFragment"
+            app:destination="@id/taskDetailFragment" />
+        <action
+            android:id="@+id/action_editTaskFragment_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/taskDetailFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="note"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.dewan.todoapp.view.ui.profile.edit.EditProfileFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/edit_profile_fragment" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <argument
+            android:name="bio"
+            app:argType="string" />
+        <argument
+            android:name="image_url"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_editProfileFragment_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpToInclusive="false" />
+    </fragment>
+</navigation>

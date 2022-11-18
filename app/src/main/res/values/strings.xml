@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">ToDoApp</string>
+
+    <string name="hint_password">Password</string>
+    <string name="hint_userId">User</string>
+    <string name="btn_login">Log In</string>
+    <string name="forgot_password">Forgot your login detail?</string>
+    <string name="get_help_signing">Get help signing in</string>
+    <string name="error_no_internet">No Internet!</string>
+    <string name="error_no_internet_msg">Sorry there is no network connection.Please check your network connection.</string>
+
+    <string name="or">OR</string>
+    <string name="signup">Sign up</string>
+    <string name="no_account">Don\'t have account?</string>
+    <string name="user_name">User Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_user_name">User Name</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="btn_signup">Sign up</string>
+    <string name="login">Log In</string>
+
+    <string name="empty_user_name_title">Empty UserName!</string>
+    <string name="empty_user_name_msg">UserName cannot be empty</string>
+    <string name="empty_email_title">Empty Email!</string>
+    <string name="empty_email_msg">Email cannot be empty</string>
+    <string name="empty_password_title">Empty Password!</string>
+    <string name="empty_password_msg">Password cannot be empty</string>
+    <string name="empty_confirm_password_title">Empty Confirm Password!</string>
+    <string name="empty_confirm_password_msg">Confirm password cannot be empty</string>
+
+    <string name="error_confirm_password_title">Password Not Matched!</string>
+    <string name="error_confirm_password_msg">Confirm password does not match.</string>
+    <string name="navigation_home">Home</string>
+    <string name="navigation_add_task">Add Task</string>
+    <string name="navigation_profile">Profile</string>
+    <string name="task_title">Title</string>
+    <string name="task_body">Body</string>
+
+    <string name="btn_ok">OK</string>
+    <string name="title_success_dialog">Success!</string>
+    <string name="title_un_successful_dialog">UnSuccessful!</string>
+    <string name="title_successful_signup">Great!</string>
+    <string name="title_error_dialog">Error!</string>
+    <string name="msg_add_post_success">Task added successfully.</string>
+    <string name="msg_add_post_un_successful">Sorry! Something went wrong. Please try again.</string>
+    <string name="msg_signup_successful">Hurry! you have created a new account. Please login</string>
+    <string name="alert_error_title">Ouch!</string>
+    <string name="alert_error_msg">There was a error please try again.</string>
+    <string name="alert_success_title">Great!</string>
+    <string name="alert_edit_success_msg">Successfully updated</string>
+    <string name="todo">content description</string>
+    <string name="profile_post">Posts</string>
+    <string name="profile_follower">Follower</string>
+    <string name="profile_following">Following</string>
+    <string name="zero">0</string>
+    <string name="edit_menu_item">Edit</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_bio">Bio</string>
+    <string name="private_information">Private Information</string>
+    <string name="email">Email</string>
+    <string name="email_field_hint">Email</string>
+    <string name="name">Name</string>
+    <string name="bio">Bio</string>
+    <string name="alert_delete_task_title">Warning!</string>
+    <string name="alert_delete_msg">Do you really want to delete the task?</string>
+    <string name="alert_delete_task_success_title">Great!</string>
+    <string name="alert_delete_task_success_msg">Task was deleted successfully</string>
+    <string name="alert_delete_task_error_title">Great!</string>
+    <string name="alert_delete_task_error_msg">Task was deleted successfully</string>
+
+
+    <string-array name="task_status_list">
+        <item>PENDING</item>
+        <item>STARTED</item>
+        <item>COMPLETED</item>
+    </string-array>
+
+    <string name="validator_title">Validation Failed!</string>
+    <string name="validation_email_failed">Email validation failed. Please check your email address</string>
+    <string name="validation_password_failed">Password validation failed. Please check your password</string>
+    <string name="validation_confirm_password_failed">confirm password validation failed. Please check your confirm password</string>
+
+    <string name="error_code_400">The server could not understand the request due to invalid syntax.</string>
+    <string name="error_code_401">Unauthorized! Please login.</string>
+    <string name="error_code_404">The server can not find the requested resource.</string>
+    <string name="error_code_500">The server has encountered a situation it doesn\'t know how to handle.</string>
+    <string name="error_code_unknown">Unknown error.</string>
+    <string name="lb_note">Note</string>
+
+    <string name="sncakbar_close">Close</string>
+
+
+</resources>
